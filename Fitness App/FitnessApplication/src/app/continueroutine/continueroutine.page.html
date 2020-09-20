@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Continuar rutina</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="text">
+    <ion-text><h1>{{diaEntrenamiento | uppercase}}</h1></ion-text>
+  </div>
+  <div>
+    <ion-button color="primary" (click)='routineActive()'>Iniciar</ion-button>
+  </div>
+  <div>
+    <ion-button color="danger" (click)='pasarDia()'>Pasar al siguiente dia</ion-button>
+  </div>
+</ion-content>
